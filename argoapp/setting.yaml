@@ -1,0 +1,20 @@
+# sample setting
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-app
+spec:
+  destination:
+    name: ''
+    namespace: app
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: argoapp
+    repoURL: 'https://github.com/GawinGowin/app'
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated: null
+    syncOptions:
+      - CreateNamespace=true

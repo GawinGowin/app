@@ -1,0 +1,9 @@
+# For application's configuration in detail for KubernetesApp, please visit
+# https://pipecd.dev/docs/user-guide/managing-application/defining-app-configuration/kubernetes/
+
+apiVersion: pipecd.dev/v1beta1
+kind: KubernetesApp
+spec:
+  name: foo
+  labels:
+    team: bar

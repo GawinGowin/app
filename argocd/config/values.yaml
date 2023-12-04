@@ -1,8 +1,0 @@
-server:
-  service:
-    type: LoadBalancer
-    loadBalancerSourceRanges: [
-      "159.28.65.14/32",  # office IP
-      "160.237.148.66/32", # home IP
-      "111.108.92.133/32" # school IP
-    ]

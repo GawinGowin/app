@@ -1,0 +1,3 @@
+[submodule "sub-app"]
+	path = sub-app
+	url = https://github.com/GawinGowin/sub-app
